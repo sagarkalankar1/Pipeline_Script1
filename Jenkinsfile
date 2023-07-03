@@ -37,5 +37,12 @@ pipeline{
             }
         }
 
+        stage('Java') {
+            steps {
+                javac Hello.java
+                java Hello
+            }
+        }
+
     }
 }

@@ -39,8 +39,8 @@ pipeline{
 
         stage('Java') {
             steps {
-                javac Hello.java
-                java Hello
+               sh 'javac Hello.java'
+               sh 'java Hello'
             }
         }
 
